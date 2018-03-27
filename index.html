@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.container{
+		display: flex;
+	}
+	.button{
+			background-color: DarkBlue;
+			color: white;
+			padding: 10px 15px;
+		}
+	</style>
+	<script type="text/javascript" src="one.js"></script>
+	<script type="text/javascript" src="two.js"></script>
+	<script type="text/javascript" src="three.js"></script>
+	<script type="text/javascript" src="four.js"></script>
+	<script type="text/javascript" src="five.js" defer></script>	<!-- needs to be run after the DOM has been loaded, or else the element may be undefined -->
+</head>
+<body>
+
+<div class="container">
+	 <a href="#" id="Switch" class="button">Click Me</a>
+</div>
+
+
+</body>
+</html>
