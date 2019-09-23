@@ -1,2 +1,2 @@
-numbers.pop(); //  pop modifies the array. deletes the last index
+numbers.pop();
 console.log(numbers);
