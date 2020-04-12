@@ -6,9 +6,9 @@ function FotballClub(theName) {
 var bestClub = new FotballClub("Liverpool FC");
 bestClub.players.push(
   "Mohamed Salah",
-  "Roberto Firmino",
   "Sadio Mané",
-  "Philippe Coutinho"
+  "Virgil van Dijk",
+  "Roberto Firmino"
 );
 
 FotballClub.prototype.scoreGoal = function () {
