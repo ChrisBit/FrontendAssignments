@@ -1,19 +1,6 @@
-function FotballClub(theName) {
-  this.name = theName;
-  this.players = [];
-}
+var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(numbers.slice(4, 6)); // slice does not modify the arrray. Gets index 4 and 5, excluding 6
+console.log(numbers);
 
-var bestClub = new FotballClub("Liverpool FC");
-bestClub.players.push(
-  "Mohamed Salah",
-  "Sadio Mané",
-  "Virgil van Dijk",
-  "Roberto Firmino"
-);
-
-FotballClub.prototype.scoreGoal = function () {
-  var player = this.players[Math.floor(Math.random() * this.players.length)];
-  return player + " scores a goal!";
-};
-
-console.log(bestClub.scoreGoal());
+numbers.pop(); // Removes the last element from the array
+console.log(numbers);
