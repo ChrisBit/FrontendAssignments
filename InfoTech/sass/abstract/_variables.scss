@@ -1,0 +1,31 @@
+/* Color variables */
+$light: white;
+$dark: #1a1a1a;
+$link: #ffe6e6;
+$back-color: #2e3038;
+$brand-color: #195886;
+
+/* Default settings */
+$default-font-size: 16px;
+$default-line-heigth: 135%;
+$air: 15px;
+
+/*
+	Clear fix
+ */
+@mixin clearfix {
+	display: block;
+	&:after {
+		display: block;
+		clear: both;
+	}
+}
+
+/*
+	Font mixin
+*/
+@mixin font {
+	font-family: 'Roboto', sans-serif;
+}
+
+

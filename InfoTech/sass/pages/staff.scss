@@ -1,0 +1,62 @@
+@import "../abstract/variables";
+
+.person {
+	float: left;
+	padding: 10px 0;
+	width: 33.33%;
+	text-align: center;
+
+	@media screen and (max-width: 750px) {
+		width: 50%;
+	}
+
+	img {
+		height: 200px;
+
+		@media screen and (max-width: 750px) {
+			height: 100px;
+		}
+
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	a {
+		display: block;
+	}
+
+	@media screen and (max-width: 750px) {
+
+		* {
+			font-size: 3vw;
+		}
+
+	}
+
+	@media screen and (max-width: 500px) {
+
+		* {
+			font-size: 4vw;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 750px) {
+
+	.person:nth-of-type(2n+1) {
+		clear: left;
+	}
+
+}
+
+@media screen and (min-width: 750px) {
+
+	.person:nth-of-type(3n+1) {
+		clear: left;
+	}
+
+}

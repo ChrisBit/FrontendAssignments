@@ -1,0 +1,41 @@
+@import "../abstract/variables";
+
+form label + label {
+	margin-top: 10px;
+}
+
+label {
+	display: block;
+}
+
+input, textarea {
+	width: 200px;
+	padding: 5px;
+	box-sizing: border-box;
+	border: 1px solid Silver;
+	border-radius: 5px;
+}
+
+textarea {
+	width: 300px;
+	height: 100px;
+	resize: none;
+	max-width: 90%;
+}
+
+form {
+	span {
+		display: block;
+		margin-bottom: 2px;
+	}
+}
+
+select {
+	width: 120px;
+	height: 25px;
+}
+
+button {
+	margin-top: 15px;
+	padding: 10px 20px;
+}

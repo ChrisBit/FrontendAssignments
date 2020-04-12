@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Module Assignment 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CDN: CSS, JS, Popper.js, and jQuery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-toggleable-md navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Order<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <header><h1>Nice Cream</h1></header>
+    <div class="row">
+        <div class="col-sm">
+            <div class="alert alert-info" role="alert">
+                You are logged in as John Doe
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="productselect">Adress</label>
+                    <input class="form-control" type="text" placeholder="4096 Station Street
+Austin, TX 78702" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="productselect">Phone</label>
+                    <input class="form-control" type="text" placeholder="512-211-4043" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="productselect">MasterCard</label>
+                    <input class="form-control" type="text" placeholder="5371 6966 3025 0921" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="productselect">Choose one of your favorites</label>
+                    <select class="form-control" id="productselect">
+                        <option>Vanilla</option>
+                        <option>Bacon ice cream</option>
+                        <option>Cookies and Cream</option>
+                        <option>Rocky road</option>
+                        <option>Cotton candy</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPassword">Confirm password</label>
+
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+
+                </div>
+                <button type="submit" class="btn btn-info">Order now!</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <p>Nice Cream</p>
+        <p>(C) Kristoffer Eide 2017</p>
+    </footer>
+
+</div>
+</body>
+</html>

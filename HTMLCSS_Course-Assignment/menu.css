@@ -1,0 +1,48 @@
+.menu li{
+       padding-top: 10px;
+       padding-bottom: 10px;
+}
+nav li:nth-of-type(1), nav li:nth-of-type(2){
+float: left;
+width: 50%;
+
+}
+nav li:nth-of-type(3), nav li:nth-of-type(4){
+float: right;
+width: 50%;
+
+}
+nav li{
+display: inline-block;
+}
+nav li a{
+padding-left: 50%;
+padding-right: 50%;
+}
+nav{
+    padding-bottom: 4em;
+    overflow: hidden; /*ugh*/
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0px;
+}
+.menu li {
+    background-color: hsl(215, 50%, 50%);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.52); /*  ref: https://www.cssmatic.com/box-shadow */
+}
+.menu a{
+     color: white;
+     text-decoration: none;
+text-align: center;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 16px;
+}
+
+.menu li:hover {
+    background-color: hsl(215, 50%, 25%);
+}
+
+li.active{
+     background-color: hsl(215, 50%, 25%);
+}

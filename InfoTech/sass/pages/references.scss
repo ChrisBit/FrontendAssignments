@@ -1,0 +1,36 @@
+@import "../abstract/variables";
+
+.ref-logo {
+	img {
+		height: 50px;
+		margin-bottom: 10px;
+		background-color: $light;
+		padding: 2px;
+	}
+}
+
+.more-logos {
+	img {
+		margin: 12px;
+		height: 70px;
+		max-width: 95%;
+	}
+}
+
+#bundegruppen {
+	background-color: $dark;
+}
+
+#knutsen {
+	background-color: $brand-color;
+}
+
+.more-logos, .ref-logo {
+	text-align: center;
+	img {
+		filter: grayscale(75%);
+		&:hover {
+			filter: grayscale(0);
+		}
+	}
+}

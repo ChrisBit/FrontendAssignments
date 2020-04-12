@@ -1,0 +1,12 @@
+{
+	"name": "InfoTech",
+	"version": "1.0.0",
+	"description": "semester project",
+	"main": "src/index.php",
+	"author": "Kristoffer Eide",
+	"license": "SEE LICENSE IN License.md",
+	"devDependencies": {
+		"gulp": "^3.9.1",
+		"gulp-sass": "^3.1.0"
+	}
+}

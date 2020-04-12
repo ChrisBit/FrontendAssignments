@@ -1,0 +1,115 @@
+.main-menu {
+	text-align: center;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: $brand-color;
+
+	ul:not(.sub-menu) {
+		@media screen and (max-width: 850px) {
+			display: none;
+		}
+		@media screen and (min-width: 850px) { // "ipad menu" fix
+			display: block !important;
+		}
+	}
+
+	a.active {
+		background-color: darken($brand-color, 5%);
+	}
+
+	li {
+		display: inline-block;
+		position: relative;
+
+		@media screen and (max-width: 850px) {
+			display: block;
+		}
+
+		&:hover {
+
+			@media screen and (min-width: 850px) {
+				background-color: darken($brand-color, 5%);
+			}
+
+			.sub-menu {
+				display: block;
+			}
+
+		}
+
+		a {
+			display: block;
+			padding: 20px;
+			font-size: 23px;
+			text-decoration: none;
+			font-weight: bold;
+			color: $light;
+		}
+
+	}
+
+	.sub-menu {
+		text-align: center;
+		z-index: 10;
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: darken($brand-color, 5%);
+
+		@media screen and (max-width: 850px) {
+			display: block;
+			background-color: $brand-color;
+			position: inherit;
+		}
+
+		li {
+			position: relative;
+			display: block;
+
+			&:hover {
+				@media screen and (min-width: 850px) {
+					background-color: darken($brand-color, 10%);
+				}
+			}
+
+			a {
+				display: block;
+				font-size: 18px;
+				padding: 10px;
+
+				@media screen and (max-width: 850px) {
+					padding: 20px;
+				}
+
+			}
+
+		}
+	}
+}
+
+.menu-icon {
+	font-size: 50px;
+	cursor: pointer;
+	margin-bottom: 0;
+
+}
+
+#burger-menu {
+	@media screen and (min-width: 850px) {
+		display: none;
+	}
+}
+
+#x-menu {
+	display: none;
+}
+
+body.open-menu {
+	#burger-menu {
+		display: none;
+	}
+	#x-menu {
+		display: block;
+	}
+}
