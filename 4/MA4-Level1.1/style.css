@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+button {
+  background: green;
+  box-shadow: none;
+  padding: 50px 100px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
+  font-size: 60px;
+}
+button:hover {
+  background: #198c19;
+  box-shadow: 1px 1px 1px darkgrey;
+}
+button:active {
+  background: #198c19;
+  box-shadow: 1px 1px 1px darkgrey;
+  font-size: 50px;
+}

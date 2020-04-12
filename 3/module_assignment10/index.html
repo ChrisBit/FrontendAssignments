@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <title>Module Assignment 3 - 1.2</title>
+      <style>
+        form {
+          display: grid;
+          grid-template-columns: max-content;
+        }
+
+        input {
+          padding: 5px;
+          margin: 5px;
+          border-radius: 5px;
+        }
+
+        input[type="submit"] {
+          background-color: teal;
+          color: white;
+          border: 1px solid whitesmoke;
+          border-radius: 5px;
+          font-size: 15px;
+        }
+
+        input[type="submit"]:hover {
+          background-color: #007373;
+          color: whitesmoke;
+          border: 1px solid #e5e5e5;
+          font-size: 15px;
+          cursor: pointer;
+        }
+
+        #alertbox p {
+          background-color: red;
+          width: max-content;
+          padding: 10px;
+          border-radius: 10px;
+          color: white;
+        }
+      </style>
+      <script type="text/javascript" src="script.js" defer></script>
+    </head>
+
+    <body>
+      <form
+        name="theForm"
+        onsubmit="return validateForm()"
+        action="success.html"
+        method="post"
+      >
+        <!-- Usually i would have used different types for the inputs, but for the sake of this task i use text. -->
+        <input type="text" name="fname" placeholder="First name" />
+        <input type="text" name="lname" placeholder="Last name" />
+        <input type="text" name="phone" placeholder="Telephone number" />
+        <input type="text" name="email" placeholder="Email address" />
+        <input type="submit" value="Submit" />
+      </form>
+      <div id="alertbox"></div>
+    </body>
+  </html>
+</html>

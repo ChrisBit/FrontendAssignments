@@ -1,0 +1,25 @@
+.card-columns {
+  margin: 10px;
+}
+
+.card-body {
+  padding: 5px 0 20px 15px;
+}
+.card-body span:not(:first-child) {
+  margin-left: 10px;
+}
+.card-body span {
+  font-size: 14px;
+  color: dimgrey;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.card.true {
+  background: hsl(190, 60%, 80%);
+}
+.card.false {
+  background: hsl(0, 60%, 80%);
+}
