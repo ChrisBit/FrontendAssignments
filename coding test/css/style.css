@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    margin: 0px;
+}
+
+/* container
+*/
+nav {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+/* nav links position
+*/
+#navlinks {
+    float: right;
+    padding: 50px 150px;
+}
+
+/* resposive ipad
+*/
+@media (max-width: 770px) {
+    #navlinks {
+        float: none;
+        padding: 50px 15px;
+    }
+}
+@media (max-width: 375px) {
+    #navlinks {
+        padding-bottom: 5px;
+        padding: 50px 150px;
+    }
+}
+@media (max-width: 559px) {
+    #navlinks {
+        display: grid;
+    }
+}
+
+/* nav links, decor
+*/
+nav a {
+    text-decoration: none;
+    color: #231161;
+    padding: 0px 0px 0px 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+}
+
+/* resposive code ipad
+*/
+@media (max-width: 770px) {
+    nav a {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+@media (max-width: 559px) {
+    nav a {
+        padding-bottom: 10px;
+    }
+}
+
+
+#logo {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+    /*
+intro bar
+  */
+#intro {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: #F9F9F9;
+}
+@media (max-width: 375px) {
+    #intro {
+        width: max-content;
+    }
+}
+
+/* slogan customising
+*/
+#headertext h1 {
+    padding-top: 100px;
+    font-size: 36px;
+    color: #231161;
+    line-height: 50px;
+    text-align: center;
+    font-family: "SF Display", "Roboto", sans-serif;
+}
+
+/* resposive kode ipad
+*/
+@media (max-width: 770px) {
+    #headertext h1 {
+        transform: scale(0.7);        
+        float: left;
+    }
+}
+@media (max-width: 365px) {
+      #headertext h1 {
+        transform: scale(0.5);
+
+        float: left;
+        margin-left: -100px;
+    }
+}
+#icondisplay {
+    float: center;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px;
+}
+#icondisplay img {
+    display: inline;
+    padding: 90px 90px 20px 90px;
+}
+#icondisplay p {
+    display: inline-block;
+    padding: 50px 50px 10px 50px;
+}
+@media (max-width: 770px) {
+    #icondisplay {
+        transform: scale(0.8);
+    }
+}
+@media (max-width: 770px) {
+    #icondisplay img {
+        padding: 0px 0px 0px 0px;
+    }
+}
+@media (max-width: 770px) {
+    #icondisplay p {}
+}
+@media (max-width: 375px) {
+    #icondisplay img {
+        transform: scale(1);
+    }
+}
+.row {
+    overflow: hidden;
+    padding: 10px;
+    display: inline-grid;
+}
+@media (max-width: 770px) {
+    /* responsive ipad */
+    .row {
+        display: table-cell;
+    }
+}
+@media (max-width: 375px) {
+    /* responsive mobil */
+    .row {
+        text-align: left;
+        display: block;
+    }
+}
+.row img {
+    margin-right: 20px;
+}
+@media (max-width: 770px) {
+    .row img {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+}
+.row p {
+    vertical-align: middle;
+    padding: 150px 50px 10px 50px;
+    color: #231161;
+    font-family: "SF Display", "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 33px;
+}
+.column {
+    overflow: hidden;
+    padding: 10px;
+    display: inline-grid;
+}
+.column p {
+    display: block;
+    padding: 50px 50px 10px 90px;
+    color: #231161;
+    font-family: "SF Display", "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 33px;
+}
+@media (max-width: 770px) {
+    .column {
+        display: table-cell;
+    }
+}
+@media (max-width: 375px) {
+    .column {
+        text-align: left;
+        display: block;
+    }
+}
+#vartarbeid {
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+#vartarbeid p {
+    color: #231161;
+    font-family: "SF Display", "Roboto", sans-serif;
+    font-size: 22px;
+    line-height: 33px;
+}
+@media (max-width: 770px) {
+    #vartarbeid {
+        padding-top: 50px;
+        padding-bottom: 90px;
+    }
+}
+.textbox {
+    padding: 20px 100px 90px 100px;
+    padding-bottom: 25px;
+    margin: -200px 100px;
+    opacity: 0.9;
+    background-color: #231161;
+    position: absolute;
+}
+.textbox h3 {
+    font-family: "SF Display", "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.textbox p {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 10px 30px 10px;
+    text-align: center;
+}
+#prosjekt1 {
+    display: inline-block;
+    float: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+}
+@media (max-width: 770px) {
+    #prosjekt1 img {}
+}
+#prosjekt2 {
+    display: inline-block;
+    float: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+}
+@media (max-width: 770px) {
+    #prosjekt2 {
+        padding-top: 50px;
+    }
+}
+@media (max-width: 1024px) {
+    #prosjekt2 {
+        padding-top: 50px;
+    }
+}
+#prosjekt3 {
+    display: inline-block;
+    float: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    vertical-align: top;
+    padding-top: 200px;
+}
+@media (max-width: 770px) {
+    #prosjekt3 {
+        padding-top: 100px;
+    }
+}
+@media (max-width: 1024px) {
+    #prosjekt3 {
+        padding-top: 100px;
+    }
+}
+#projectdisplay {
+    margin-top: -50px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.projectsplit {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 0px;
+}
+@media (max-width: 770px) {
+    .projectsplit img {
+        transform: scale(1);
+        display: block;
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    .projectsplit img {
+        transform: scale(1);
+        display: block;
+        width: 100%;
+    }
+}
+#kontakt {
+    padding-top: 90px;
+    overflow: hidden;
+    background-color: #F9F9F9;
+    text-align: center;
+}
+#kontakt h1 {
+    color: #231161;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+@media (max-width: 375px) {
+    #kontakt h1 {
+        text-align: left;
+    }
+}
+#kontakt p {
+    color: #231161;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+}
+#kontakt img {
+    padding: 0px 0px 0px 0px;
+}
+@media (max-width: 770px) {
+    #kontakt img {
+        transform: scale(1);
+        display: block;
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    #kontakt img {
+        transform: scale(1);
+        display: block;
+        width: 100%;
+    }
+}
+@media (max-width: 1370px) {
+    #kontakt img {
+        transform: scale(1);
+        display: block;
+        width: 100%;
+    }
+}
+footer {
+    overflow: hidden;
+    background-color: #231161;
+    padding-top: 90px;
+    padding-bottom: 300px;
+    padding-left: 30px;
+}
+footer p {
+    color: #FBFAFA;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+#kontakt {
+    margin: 0px 0px 0px 0px;
+}
+#footer1 {
+    width: 10%;
+    display: inline-block;
+    padding-left: 150px;
+    text-align: center;
+    vertical-align: top;
+}
+#footer2 {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+#footer3 {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+@media (max-width: 770px) {
+    #footer1 {
+        width: 20%;
+        transform: scale(1);
+    }
+    #footer2 {
+        width: 20%;
+        transform: scale(1);
+    }
+    #footer3 {
+        width: 20%;
+        transform: scale(1);
+    }
+}
+@media (max-width: 1000px) {
+    #footer1 {
+        width: 20%;
+        transform: scale(1);
+    }
+    #footer2 {
+        width: 20%;
+        transform: scale(1);
+    }
+    #footer3 {
+        width: 20%;
+        transform: scale(1);
+    }
+}
+@media (max-width: 660px) {
+    #footer1 {
+        width: initial;
+        transform: scale(0.5);
+        text-align: left;
+        float: left;
+        vertical-align: top;
+        padding: initial;
+        padding-right: 25px;
+    }
+    #footer2 {
+        width: initial;
+        transform: scale(0.5);
+        text-align: left;
+        float: left;
+        vertical-align: initial;
+        padding-right: 25px;
+    }
+    #footer3 {
+        width: initial;
+        transform: scale(0.5);
+        text-align: left;
+        float: left;
+        vertical-align: initial;
+        padding-right: 25px;
+    }
+}
+#allprosjekter {
+    color: #231161;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+}
+@media (max-width: 770px) {
+    #allprosjekter {
+        padding-top: 40px;
+    }
+}
