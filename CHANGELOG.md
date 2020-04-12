@@ -1,5 +1,3 @@
-# 2018.03.10 - Javascript 1 - Module Assignment 2
-
 # Changelog
 
 All notable changes to this project will be documented in this file.
