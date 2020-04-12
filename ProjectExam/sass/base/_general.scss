@@ -1,0 +1,61 @@
+/* General colors and typography */
+
+html {
+  background-color: $darker;
+}
+
+body {
+  @include Lato;
+  font-size: $default-font-size;
+  background-color: $dark;
+  color: $light;
+  line-height: $default-line-heigth;
+  a {
+    color: $blue;
+  }
+}
+
+/* Wrappers */
+.wrapper {
+  @include clearfix;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
+  padding-right: $air;
+  padding-left: $air;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Headings */
+$i: 1;
+$o: 34;
+@while $i < 7 {
+  h#{$i} {
+    $o: $o - 4px;
+    font-size: $o;
+    font-weight: bold;
+    text-align: center;
+    margin: ($air * 2) 0 $air 0;
+    $i: $i + 1;
+  }
+  //ref: https://stackoverflow.com/questions/34877603/sass-for-h1-h6-style
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+p {
+  line-height: $default-line-heigth;
+}
+
+b {
+  font-weight: bold;
+}
+
+pre {
+  white-space: pre-wrap;
+}

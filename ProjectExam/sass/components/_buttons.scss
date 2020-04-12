@@ -1,0 +1,16 @@
+button,
+.button {
+  background: $blue;
+  color: white;
+  border: 1px solid $light;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  &:hover {
+    background: darken($blue, 5%);
+    border: 1px solid white;
+  }
+}

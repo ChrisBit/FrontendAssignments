@@ -1,0 +1,17 @@
+{
+  "name": "space-x-microsite",
+  "version": "1.0.0",
+  "description": "Noroff Project Exam 1",
+  "main": "www/index.php",
+  "author": "Kristoffer Eide",
+  "license": "SEE LICENSE IN license.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChrisBit/Noroff-ProjectExam1.git"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.0.2"
+  }
+}

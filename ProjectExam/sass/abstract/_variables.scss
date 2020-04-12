@@ -1,0 +1,34 @@
+/* Color variables */
+$light: #ccc;
+
+$dark: #181c1f;
+$darker: #0e1112;
+$gold: #ccac55;
+$blue: #3569a4;
+
+/* Default stuff */
+$default-font-size: 18px;
+$default-line-heigth: 150%;
+$air: 20px;
+
+/* Clear fix */
+@mixin clearfix {
+  display: block;
+  &:after {
+    display: block;
+    clear: both;
+  }
+}
+
+/* Font mixin(s) */
+@mixin Lato {
+  font-family: "Lato", sans-serif;
+}
+
+@mixin Josefine {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@mixin Karla {
+  font-family: "Karla", sans-serif;
+}

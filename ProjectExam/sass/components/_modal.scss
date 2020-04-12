@@ -1,0 +1,36 @@
+/* overlay */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Content/Box */
+.modal-content {
+  color: $dark;
+  background-color: $light;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid $dark;
+  height: 100vw;
+  width: 80%;
+}
+
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  cursor: pointer;
+}

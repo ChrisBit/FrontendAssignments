@@ -1,0 +1,62 @@
+.parallax {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% auto;
+  position: relative;
+
+  .img-wrapper {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      @media screen and (max-width: 700px) {
+        height: 150px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    height: 300px;
+  }
+}
+
+.parallax-img1 {
+  background-image: url("/assets/img/backgrounds/space-1.jpg");
+}
+
+.parallax-img2 {
+  background-image: url("/assets/img/backgrounds/milky-way-1.jpg");
+}
+
+.parallax-img-dragon {
+  background-image: url("/assets/img/backgrounds/dragon_interior.jpg");
+}
+
+.parallax-img3 {
+  background-image: url("/assets/img/backgrounds/moon-stars-1.jpeg");
+  position: initial !important; // bug fix
+}
+
+.parallax-block {
+  margin-top: $air;
+  margin-bottom: $air;
+  p {
+    text-align: center;
+    line-height: 225%;
+  }
+}
+
+.button-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  margin-bottom: $air;
+}

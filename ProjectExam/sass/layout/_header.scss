@@ -1,0 +1,99 @@
+/* Header stuff */
+
+header {
+	min-height: 60px;
+	background-color: $darker;
+}
+
+.logo, .main-menu li {
+	float: left;
+	padding: 15px 10px 0 0;
+	margin: 0 15px 0 0;
+	a {
+		color: white;
+		text-decoration: none;
+	}
+}
+
+.logo {
+	a {
+		@include Josefine;
+		font-size: 22px;
+	}
+}
+
+.main-menu {
+	display: block;
+
+	li a {
+		@include Josefine;
+		font-size: 13px;
+		text-transform: uppercase;
+		&.active{
+			border-bottom: 1px solid $gold;
+		}
+		&:hover{
+			border-bottom: 1px solid $gold;
+		}
+	}
+}
+
+.menu-icon {
+	cursor: pointer;
+	z-index: 99;
+	position: fixed;
+	right: 15px;
+	clear: none;
+	display: none;
+	font-size: 25px;
+}
+
+@media screen and (max-width: 700px) {
+	.menu-icon {
+		display: block;
+	}
+
+	#burger-menu {
+		display: block;
+		body.open-menu & {
+			display: none;
+		}
+	}
+	#x-menu {
+		display: none;
+		body.open-menu & {
+			display: block;
+		}
+	}
+
+	.main-menu {
+		text-align: center;
+		padding-bottom: 15px;
+
+		ul {
+			display: none;
+
+			z-index: 15;
+			position: fixed;
+			right: 0;
+			left: 0;
+			background: black;
+			clear: both;
+
+			li {
+				margin: 15px 0 15px 0;
+				float: none;
+			}
+
+		}
+	}
+
+}
+
+@media screen and (min-width: 700px) {
+	.main-menu {
+		ul {
+			display: block !important;
+		}
+	}
+}
