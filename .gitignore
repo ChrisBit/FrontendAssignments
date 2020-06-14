@@ -1,1 +1,4 @@
 node_modules/
+ProjectExam/www/assets/css/main.css
+ProjectExam/www/assets/js/global-debug.js
+ProjectExam/www/assets/js/global-min.js
