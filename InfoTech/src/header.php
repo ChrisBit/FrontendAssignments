@@ -4,7 +4,7 @@
 <header>
 	<div class="wrapper">
 		<div class="logo">
-			<a href="https://kristoffereide.no/InfoTech/">
+			<a href="/">
 				<img src="img/logo/infotech.png" alt="logo">
 			</a>
 		</div>

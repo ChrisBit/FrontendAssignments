@@ -1,4 +1,4 @@
 <?php
-header( "Location: http://spacex.kristoffereide.no/mission.php" );
+header( "Location: /mission.php" );
 die();
 ?>
